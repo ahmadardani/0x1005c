@@ -3,13 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PHP Container Box</title>
+    <title>Bookmarks</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css"> <!-- Link external CSS file -->
 </head>
 <body>
 
     <div class="wrapper">
-        <div class="header">Bookmarks</div> <!-- Header stays on top of the container -->
+        <div class="header">
+            <span>Bookmarks</span>
+            <button>Add Category</button> 
+        </div>
         
         <div class="container">
             <div class="content">
