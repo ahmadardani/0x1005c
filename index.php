@@ -8,10 +8,14 @@
 </head>
 <body>
 
-    <div class="container">
-        <div class="header">Header</div>
-        <div class="content">
-            <?php echo "Responsive PHP Container Box"; ?>
+    <div class="wrapper">
+        <div class="header">Bookmarks</div> <!-- Header stays on top of the container -->
+        
+        <div class="container">
+            <div class="content">
+                <p>Bookmark all of your lovely sites!</p>
+                <p><?php echo "null"; ?></p>
+            </div>
         </div>
     </div>
 
