@@ -68,3 +68,68 @@ body {
     width: 100%;
     text-align: left;
 }
+
+/* Style for the form container */
+.form-container {
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Style for the input field */
+.input-field {
+    width: 95%;
+    padding: 8px;
+    font-size: 16px;
+    border: 2px solid #1565c0;
+    border-radius: 1px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Input field focus effect */
+.input-field:focus {
+    border-color: #0d47a1;
+    box-shadow: 0 0 2px rgba(21, 101, 192, 0.5);
+}
+
+/* Button container to align buttons below the input */
+.button-group {
+    display: flex;
+    justify-content: flex-end; /* Align buttons to the right */
+    gap: 10px; /* Space between buttons */
+    margin-top: 10px; /* Add space between input and buttons */
+}
+
+/* Submit button */
+.submit-btn {
+    padding: 5px 8px;
+    background-color: #1565c0;
+    color: white;
+    font-size: 16px;
+    border: 2px solid #1565c0;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Submit button hover effect */
+.submit-btn:hover {
+    background-color: white;
+    color: #1565c0;
+}
+
+/* Cancel button */
+.cancel-btn {
+    padding: 5px 8px;
+    background-color: #f44336;
+    color: white;
+    font-size: 16px;
+    border: 2px solid #f44336;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Cancel button hover effect */
+.cancel-btn:hover {
+    background-color: white;
+    color: #f44336;
+}
