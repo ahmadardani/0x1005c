@@ -1,3 +1,14 @@
+<?php
+require 'db.php'; // Include database connection
+
+// Check if there is at least one category in the database
+$result = $conn->query("SELECT COUNT(*) as count FROM category");
+$row = $result->fetch_assoc();
+$category_count = $row['count'];
+
+$conn->close();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,13 +23,17 @@
     <div class="wrapper">
         <div class="header">
             <span>Bookmarks</span>
-            <a href="new.php"><button>Add Category</button></a> 
+            <div class="button-group-header">
+                <?php if ($category_count > 0): ?> 
+                    <a href="add_list.php"><button class="list-btn">Add List</button></a> 
+                <?php endif; ?>
+                <a href="addcategory.php"><button class="category-btn">Add Category</button></a> 
+            </div>
         </div>
         
         <div class="container">
             <div class="content">
                 <p>Bookmark all of your lovely sites!</p>
-                <p><?php echo "null"; ?></p>
             </div>
         </div>
     </div>

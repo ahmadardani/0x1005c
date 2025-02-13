@@ -17,24 +17,20 @@
         <div class="container">
             <div class="content">
                 <p>Create a new category based on your interest!</p>
-
                 <?php
                 if (isset($_GET['success'])) echo "<p style='color: green;'>Category added successfully!</p>";
                 if (isset($_GET['error'])) echo "<p style='color: red;'>Error adding category. Try again.</p>";
                 if (isset($_GET['empty'])) echo "<p style='color: red;'>Category name cannot bet empty.</p>";
                 ?>
+                <form method="post" action="process.php" class="form-container">
+                    <label for="category_name">Category Name:</label><br><br>
+                    <input type="text" id="category_name" name="category_name" class="input-field" required>
 
-<form method="post" action="process.php" class="form-container">
-    <label for="category_name">Category Name:</label>
-    <p></p>
-    <input type="text" id="category_name" name="category_name" class="input-field" required>
-    
-    <!-- Button container for proper alignment -->
-    <div class="button-group">
-        <button type="button" class="cancel-btn" onclick="window.location.href='index.php';">Cancel</button>
-        <button type="submit" name="submit" class="submit-btn">Add Category</button>
-    </div>
-</form>
+                    <div class="button-group">
+                        <button type="button" class="cancel-btn" onclick="window.location.href='index.php';">Cancel</button>
+                        <button type="submit" name="submit" class="submit-btn">Add Category</button>
+                    </div>
+                </form>
             </div>
         </div>
     </div>

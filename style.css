@@ -97,7 +97,7 @@ body {
     display: flex;
     justify-content: flex-end; /* Align buttons to the right */
     gap: 10px; /* Space between buttons */
-    margin-top: 10px; /* Add space between input and buttons */
+    margin-top: 18px; /* Add space between input and buttons */
 }
 
 /* Submit button */
