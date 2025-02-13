@@ -27,7 +27,7 @@ $conn->close();
                 <?php if ($category_count > 0): ?> 
                     <a href="add_list.php"><button class="list-btn">Add List</button></a> 
                 <?php endif; ?>
-                <a href="addcategory.php"><button class="category-btn">Add Category</button></a> 
+                <a href="add_category.php"><button class="category-btn">Add Category</button></a> 
             </div>
         </div>
         

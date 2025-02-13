@@ -15,7 +15,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         $stmt->bind_param("s", $category_name);
         if ($stmt->execute()) {
-            header("Location: addcategory.php?success=1"); // Redirect with success message
+            header("Location: add_category.php?success=1"); // Redirect with success message
             exit();
         } else {
             die("Execute failed: " . $stmt->error); // Show error if execution fails
@@ -23,7 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         $stmt->close();
     } else {
-        header("Location: addcategory.php?empty=1"); // Redirect if empty
+        header("Location: add_category.php?empty=1"); // Redirect if empty
         exit();
     }
 }
